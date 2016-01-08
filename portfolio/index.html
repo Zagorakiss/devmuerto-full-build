@@ -1,0 +1,1353 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Dev Muerto - Portfolio</title>
+
+    <meta name="description" content="Portfolio">
+    <meta name="author" content="Zagora">
+
+    <!-- FAVICON -->
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/assets/favicon/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/assets/favicon/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/assets/favicon/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/assets/favicon/manifest.json">
+<link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#271900">
+<link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#271900">
+<meta name="msapplication-TileImage" content="/assets/favicon/mstile-144x144.png">
+<meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffa500">
+<!-- FAVICON END -->
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+	<link href="/css/muertofont.css" rel="stylesheet">
+	<link href="/css/nav-only.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<script src="/js/jquery-2.1.4.min.js"></script>
+</head>
+
+<body>
+
+<!-- PRELOADER -->
+    <div class="preloader" id="preloader"></div>
+    <script>
+    jQuery(document).ready(function($) {  
+      $(window).load(function(){
+      $('#preloader').fadeOut('slow',function(){$(this).remove();});
+      });
+      
+    });
+    </script>
+    <!-- PRELOADER END -->
+
+
+
+<!-- NAV -->
+      <div class="burger">
+    <div class="burger__patty"></div>
+    <div class="burger__patty"></div>
+    <div class="burger__patty"></div>
+  </div>
+
+  <nav class="menu">
+    <div class="menu__brand">
+      <!-- <a href=""> --><div class="logo"></div><!-- </a> -->
+    </div>
+    <ul class="menu__list">
+      <!-- INTERNAL -->
+      <li class="menu__item"><a href="http://devmuerto.com" class="menu__link"><span class="icon icon-circle-left"></span> Main Page</a></li>
+      <li class="menu__item"><a href="/donate/" class="menu__link"><span class="icon icon-pig"></span> Donate</a></li>
+      <!-- EXTERNAL -->
+      <li class="menu__item">
+        <a href="http://www.chpfly.com" target="_blank" class="menu__link menu__link--external menu__link--external--first">
+          [ <span class="icon icon-plane"></span> ChpFly <span class="icon icon-new-tab"></span> ]</a>
+      </li>
+      <li class="menu__item">
+        <a href="/kitchen-timer/" target="_blank" class="menu__link menu__link--external">
+          [ <span class="icon icon-hourglass"></span> Kitchen Timer <span class="icon icon-new-tab"></span> ]</a>
+      </li>
+      <li class="menu__item">
+        <a href="/svg-canvas-painter-online/" target="_blank" class="menu__link menu__link--external">
+          [ <span class="icon icon-tools"></span> SVG/Canvas Painter <span class="icon icon-new-tab"></span> ]</a>
+      </li>
+      <li class="menu__item">
+        <a href="/track-me/" target="_blank" class="menu__link menu__link--external">
+          [ <span class="icon icon-radio"></span> Track Me <span class="icon icon-new-tab"></span> ]</a>
+      </li>
+      <li class="menu__item">
+        <a href="/barcode-gen/" target="_blank" class="menu__link menu__link--external">
+          [ <span class="icon icon-barcode"></span> Barcode Gen <span class="icon icon-new-tab"></span> ]</a>
+      </li>
+    </ul>
+  </nav>
+      <!-- NAV END -->
+
+
+
+	<div class="cd-intro-block">
+		<div class="content-wrapper">
+			<h1>Portfolio by <span class="orange">devmuerto.com</span></h1>
+			<a href="#0" class='cd-btn' data-action="show-projects">Show projects</a>
+		</div>
+	</div> <!-- .cd-intro-block -->
+
+	<div class="cd-projects-wrapper">
+		<ul class="cd-slider">
+			<li class="current">
+				<a href="#chpfly">
+					<img src="assets/thumbs/chpfly-logo.png" alt="project image">
+					<div class="project-info">
+						<h2>ChpFly</h2>
+						<p>Cheapest Flight Tickets</p>
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a href="#medrelic">
+					<img src="assets/thumbs/medrelic-logo.png" alt="project image">
+					<div class="project-info">
+						<h2>Medrelic</h2>
+						<p>Consulting agency helping with registration, certification, and localization of medical products & devices.</p>
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a href="#svg-canvas-painter">
+					<img src="assets/thumbs/svg-painter-logo.png" alt="project image">
+					<div class="project-info">
+						<h2>SVG/Canvas Painter</h2>
+						<p>Paint any shapes online in your browser</p>
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a href="#pleiada">
+					<img src="assets/thumbs/pleiada-logo.png" alt="project image">
+					<div class="project-info">
+						<h2>Pleiada</h2>
+						<p>Agency of real estate abroad</p>
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a href="#maindoor">
+					<img src="assets/thumbs/maindoor-logo.png" alt="project image">
+					<div class="project-info">
+						<h2>Maindoor</h2>
+						<p>Realty agency focused on elite real estate around the world</p>
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a href="#rain-musical">
+					<img src="assets/thumbs/rain-logo.jpg" alt="project image">
+					<div class="project-info">
+						<h2>Singin' in the Rain</h2>
+						<p>Responsive promotional website for "Singin' in the Rain" musical</p>
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a href="#gear-show">
+					<img src="assets/thumbs/gear-logo.jpg" alt="project image">
+					<div class="project-info">
+						<h2>Gear. Mechanical heart</h2>
+						<p>A unique japanese show produced by Keito Kohara</p>
+					</div>
+				</a>
+			</li>
+			
+			<li>
+				<a href="#kitchen-timer">
+					<img src="assets/thumbs/kitchen-timer-logo.png" alt="project image">
+					<div class="project-info">
+						<h2>Kitchen Timer</h2>
+						<p>Kitchen timer with a nice look</p>
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a href="#dpd">
+					<img src="assets/thumbs/dpd-logo.png" alt="project image">
+					<div class="project-info">
+						<h2>DPD</h2>
+						<p>International agency of parcel delivery</p>
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a href="#stop-express">
+					<img src="assets/thumbs/stop-logo.png" alt="project image">
+					<div class="project-info">
+						<h2>Stop Express</h2>
+						<p>Fast Food network in Saint-Petersburg</p>
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a href="#volga-dream">
+					<img src="assets/thumbs/volga-dream-logo.png" alt="project image">
+					<div class="project-info">
+						<h2>Volga Dream</h2>
+						<p>Luxury river cruises in Russia</p>
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a href="#printanika">
+					<img src="assets/thumbs/printanika-logo.png" alt="project image">
+					<div class="project-info">
+						<h2>Printanika</h2>
+						<p>T-shirts prints service</p>
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a href="#finex">
+					<img src="assets/thumbs/finex-logo.png" alt="project image">
+					<div class="project-info">
+						<h2>Finex</h2>
+						<p>Landing Page with high conversion for manufacturer of wooden floors and coatings.</p>
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a href="#iitrust">
+					<img src="assets/thumbs/iitrust-logo.png" alt="project image">
+					<div class="project-info">
+						<h2>Infotex Trust</h2>
+						<p>E-Sign Certifying Service</p>
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a href="#ib-translations">
+					<img src="assets/thumbs/ib-logo.png" alt="project image">
+					<div class="project-info">
+						<h2>IB Translations</h2>
+						<p>Promotional website for IB Translations</p>
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a href="#yandex-terra">
+					<img src="assets/thumbs/ya-logo.png" alt="project image">
+					<div class="project-info">
+						<h2>Yandex Terra</h2>
+						<p>The Yandex project. Seismic data processing.</p>
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a href="#beauty-musical">
+					<img src="assets/thumbs/beauty-logo.png" alt="project image">
+					<div class="project-info">
+						<h2>Beauty and the Beast Musical</h2>
+						<p>Promotional website for "Beauty and the Beast" Musical</p>
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a href="#antique-market">
+					<img src="assets/thumbs/antique-logo.jpg" alt="project image">
+					<div class="project-info">
+						<h2>Antique Market</h2>
+						<p>Antique Online store</p>
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a href="#track-me">
+					<img src="assets/thumbs/track-me-logo.png" alt="project image">
+					<div class="project-info">
+						<h2>Track Me</h2>
+						<p>Browser tracking service</p>
+					</div>
+				</a>
+			</li>
+
+			<li>
+				<a href="#barcode-generator">
+					<img src="assets/thumbs/barcode-gen-logo.png" alt="project image">
+					<div class="project-info">
+						<h2>Barcode Generator</h2>
+						<p>Simple and fast barcode generator (Code 39)</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+
+		<ul class="cd-slider-navigation cd-img-replace">
+			<li><a href="#0" class="prev inactive">Prev</a></li>
+			<li><a href="#0" class="next">Next</a></li>
+		</ul> <!-- .cd-slider-navigation -->
+	</div> <!-- .cd-projects-wrapper -->
+
+
+
+
+
+
+	<div class="cd-project-content" id="chpfly">
+		<div>
+			<h2>ChpFly</h2>
+			<ul>
+				<li><span>Role:</span>Co-founder</li>
+				<li><span>Context:</span>Side project</li>
+				<li><span>Platform:</span>Desktop & Mobile</li>
+				<li><span>Link:</span><a class="link" target="_blank" href="http://www.chpfly.com/">www.chpfly.com</a></li>
+			</ul>
+
+<!-- MacBook MOCKUP ------------------------------------------------------------------------------ -->
+
+					<!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
+
+					<div class="css-mb with-glare">
+					  <div class="mb-display-position">
+					    <div class="mb-display">
+					      <div class="mb-screen-position">
+					        <div class="mb-screen">
+        
+					          <!-- Image (aspect 16:10 recommended, but not required). You might also want to change or remove the background color, in case the picture is not big enough, or rendering is off   -->
+					          <img src="assets/screenshots/chpfly-min.png" alt="www.ChpFly.com" />
+					          
+
+					          <!-- Youtube - don't forget to remove glare -->
+					          <!-- <iframe width="960" height="480" src="http://www.youtube.com/embed/GUEZCxBcM78?rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;controls=2" frameborder="0"></iframe> -->
+					          <!-- Notice: Youtube has some toruble with embed players and gives consol errors -->
+
+					          <!-- Iframe, simple website - don't forget to remove glare -->
+					          <!-- iframe src="http://devmuerto.com" frameborder="0"></iframe> -->
+          
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="mb-body"></div>
+					  <div class="mb-bottom-cover"></div>
+					</div>
+
+<!-- MacBook MOCKUP END ------------------------------------------------------------------------- -->
+
+			<p>
+				The cheapest flight tickets in the web!
+			</p>
+
+			<p>	With no fees!
+			</p>
+			
+			<p>
+				ChpFly searches travel and airline sites to find best prices. Book cheap air tickets with no fees to ChpFly.
+			</p>
+			<p>
+				Searching engine have access to a global database of flights by 728 airlines (including American Airlines, United Airlines, Delta Air Lines) and 200 flight booking agencies, which allows you to find flights in real time and compare them with each other.
+			</p>
+		</div>
+		<a href="#0" class="close cd-img-replace">Close</a>
+	</div> <!-- .cd-project-content -->
+
+	<div class="cd-project-content" id="medrelic">
+		<div>
+			<h2>Medrelic</h2>
+			<ul>
+				<li><span>Role:</span>Manager</li>
+				<li><span>Context:</span>Subcontract</li>
+				<li><span>Platform:</span>Responsive</li>
+				<li><span>Link:</span><a class="link" target="_blank" href="http://lzhelenin.ru/">lzhelenin.ru</a></li>
+			</ul>
+
+<!-- MacBook MOCKUP ------------------------------------------------------------------------------ -->
+
+					<!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
+
+					<div class="css-mb with-glare">
+					  <div class="mb-display-position">
+					    <div class="mb-display">
+					      <div class="mb-screen-position">
+					        <div class="mb-screen">
+        
+					          <!-- Image (aspect 16:10 recommended, but not required). You might also want to change or remove the background color, in case the picture is not big enough, or rendering is off  -->
+					          <img src="assets/screenshots/medrelic-min.png" alt="Medrelic" />
+					          
+
+					          <!-- Youtube - don't forget to remove glare -->
+					          <!-- <iframe width="960" height="480" src="http://www.youtube.com/embed/GUEZCxBcM78?rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;controls=2" frameborder="0"></iframe> -->
+					          <!-- Notice: Youtube has some toruble with embed players and gives consol errors -->
+
+					          <!-- Iframe, simple website - don't forget to remove glare -->
+					          <!-- iframe src="http://devmuerto.com" frameborder="0"></iframe> -->
+          
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="mb-body"></div>
+					  <div class="mb-bottom-cover"></div>
+					</div>
+
+<!-- MacBook MOCKUP END ------------------------------------------------------------------------- -->
+
+			<p>
+				Consulting agency helping with registration, certification, and localization of medical products & devices.
+			</p>
+			
+		</div>
+		<a href="#0" class="close cd-img-replace">Close</a>
+	</div> <!-- .cd-project-content -->
+
+	<div class="cd-project-content" id="svg-canvas-painter">
+		<div>
+			<h2>SVG/Canvas Painter</h2>
+			<ul>
+				<li><span>Role:</span>Developer</li>
+				<li><span>Context:</span>Side project</li>
+				<li><span>Platform:</span>Responsive</li>
+				<li><span>Link:</span><a class="link" target="_blank" href="http://devmuerto.com/svg-canvas-painter-online/">devmuerto.com/svg-canvas-painter-online</a></li>
+			</ul>
+
+<!-- MacBook MOCKUP ------------------------------------------------------------------------------ -->
+
+					<!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
+
+					<div class="css-mb with-glare">
+					  <div class="mb-display-position">
+					    <div class="mb-display">
+					      <div class="mb-screen-position">
+					        <div class="mb-screen">
+        
+					          <!-- Image (aspect 16:10 recommended, but not required). You might also want to change or remove the background color, in case the picture is not big enough, or rendering is off  -->
+					          <img src="assets/screenshots/svg-canvas-painter-min.png" alt="SVG/Canvas Painter Online by DevMuerto.com" />
+					          
+
+					          <!-- Youtube - don't forget to remove glare -->
+					          <!-- <iframe width="960" height="480" src="http://www.youtube.com/embed/GUEZCxBcM78?rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;controls=2" frameborder="0"></iframe> -->
+					          <!-- Notice: Youtube has some toruble with embed players and gives consol errors -->
+
+					          <!-- Iframe, simple website - don't forget to remove glare -->
+					          <!-- iframe src="http://devmuerto.com" frameborder="0"></iframe> -->
+          
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="mb-body"></div>
+					  <div class="mb-bottom-cover"></div>
+					</div>
+
+<!-- MacBook MOCKUP END ------------------------------------------------------------------------- -->
+
+			<p>
+				Paint any shapes online in your browser. Export it as SVG or Canvas.
+			</p>
+			<p>
+				Great helper for scallable web warrior.
+			</p>
+			<p>
+				To improve the service make a <a class="link" target="_blank" href="http://devmuerto.com/donate/">donation</a> for development.
+			</p>
+			
+		</div>
+		<a href="#0" class="close cd-img-replace">Close</a>
+	</div> <!-- .cd-project-content -->
+
+	<div class="cd-project-content" id="pleiada">
+		<div>
+			<h2>Pleiada</h2>
+			<ul>
+				<li><span>Role:</span>Manager</li>
+				<li><span>Context:</span>Outer studio</li>
+				<li><span>Platform:</span>Desktop</li>
+				<li><span>Link:</span><a class="link" target="_blank" href="http://pleiada.net/">pleiada.net</a></li>
+			</ul>
+
+<!-- MacBook MOCKUP ------------------------------------------------------------------------------ -->
+
+					<!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
+
+					<div class="css-mb with-glare">
+					  <div class="mb-display-position">
+					    <div class="mb-display">
+					      <div class="mb-screen-position">
+					        <div class="mb-screen">
+        
+					          <!-- Image (aspect 16:10 recommended, but not required). You might also want to change or remove the background color, in case the picture is not big enough, or rendering is off  -->
+					          <img src="assets/screenshots/pleiada-en-min.png" alt="Pleiada" />
+					          
+
+					          <!-- Youtube - don't forget to remove glare -->
+					          <!-- <iframe width="960" height="480" src="http://www.youtube.com/embed/GUEZCxBcM78?rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;controls=2" frameborder="0"></iframe> -->
+					          <!-- Notice: Youtube has some toruble with embed players and gives consol errors -->
+
+					          <!-- Iframe, simple website - don't forget to remove glare -->
+					          <!-- iframe src="http://devmuerto.com" frameborder="0"></iframe> -->
+          
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="mb-body"></div>
+					  <div class="mb-bottom-cover"></div>
+					</div>
+
+<!-- MacBook MOCKUP END ------------------------------------------------------------------------- -->
+
+			<p>
+				Agency of real estate abroad.
+			</p>
+			<p>
+				Luxury apartments around the world.
+			</p>
+			
+		</div>
+		<a href="#0" class="close cd-img-replace">Close</a>
+	</div> <!-- .cd-project-content -->
+
+	<div class="cd-project-content" id="maindoor">
+		<div>
+			<h2>Maindoor</h2>
+			<ul>
+				<li><span>Role:</span>Manager</li>
+				<li><span>Context:</span>Outer studio</li>
+				<li><span>Platform:</span>Desktop</li>
+				<li><span>Link:</span><a class="link" target="_blank" href="http://maindoor.ru/">maindoor.ru</a></li>
+			</ul>
+
+<!-- MacBook MOCKUP ------------------------------------------------------------------------------ -->
+
+					<!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
+
+					<div class="css-mb with-glare">
+					  <div class="mb-display-position">
+					    <div class="mb-display">
+					      <div class="mb-screen-position">
+					        <div class="mb-screen">
+        
+					          <!-- Image (aspect 16:10 recommended, but not required). You might also want to change or remove the background color, in case the picture is not big enough, or rendering is off  -->
+					          <img src="assets/screenshots/maindoor-min.png" alt="Maindoor" />
+					          
+
+					          <!-- Youtube - don't forget to remove glare -->
+					          <!-- <iframe width="960" height="480" src="http://www.youtube.com/embed/GUEZCxBcM78?rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;controls=2" frameborder="0"></iframe> -->
+					          <!-- Notice: Youtube has some toruble with embed players and gives consol errors -->
+
+					          <!-- Iframe, simple website - don't forget to remove glare -->
+					          <!-- iframe src="http://devmuerto.com" frameborder="0"></iframe> -->
+          
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="mb-body"></div>
+					  <div class="mb-bottom-cover"></div>
+					</div>
+
+<!-- MacBook MOCKUP END ------------------------------------------------------------------------- -->
+
+			<p>
+				Realty agency focused on elite real estate around the world.
+			</p>
+			
+		</div>
+		<a href="#0" class="close cd-img-replace">Close</a>
+	</div> <!-- .cd-project-content -->
+
+	<div class="cd-project-content" id="rain-musical">
+		<div>
+			<h2>Singin' in the Rain</h2>
+			<ul>
+				<li><span>Role:</span>Manager</li>
+				<li><span>Context:</span>Outer studio</li>
+				<li><span>Platform:</span>Responsive</li>
+				<li><span>Link:</span><a class="link" target="_blank" href="http://rain-musical.ru">rain-musical.ru</a></li>
+			</ul>
+
+<!-- MacBook MOCKUP ------------------------------------------------------------------------------ -->
+
+					<!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
+
+					<div class="css-mb with-glare">
+					  <div class="mb-display-position">
+					    <div class="mb-display">
+					      <div class="mb-screen-position">
+					        <div class="mb-screen">
+        
+					          <!-- Image (aspect 16:10 recommended, but not required). You might also want to change or remove the background color, in case the picture is not big enough, or rendering is off  -->
+					          <img src="assets/screenshots/rain-musical-min.png" alt="Singin' in the Rain" />
+					          
+
+					          <!-- Youtube - don't forget to remove glare -->
+					          <!-- <iframe width="960" height="480" src="http://www.youtube.com/embed/GUEZCxBcM78?rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;controls=2" frameborder="0"></iframe> -->
+					          <!-- Notice: Youtube has some toruble with embed players and gives consol errors -->
+
+					          <!-- Iframe, simple website - don't forget to remove glare -->
+					          <!-- iframe src="http://devmuerto.com" frameborder="0"></iframe> -->
+          
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="mb-body"></div>
+					  <div class="mb-bottom-cover"></div>
+					</div>
+
+<!-- MacBook MOCKUP END ------------------------------------------------------------------------- -->
+
+			<p>
+				Responsive promotional website for "Singin' in the Rain" musical.
+			</p>
+			
+		</div>
+		<a href="#0" class="close cd-img-replace">Close</a>
+	</div> <!-- .cd-project-content -->
+
+	<div class="cd-project-content" id="gear-show">
+		<div>
+			<h2>Gear show</h2>
+			<ul>
+				<li><span>Role:</span>Manager</li>
+				<li><span>Context:</span>Outer studio</li>
+				<li><span>Platform:</span>Responsive</li>
+				<li><span>Link:</span><a class="link" target="_blank" href="http://www.gearshow.ru/en/">gearshow.ru/en</a></li>
+			</ul>
+
+<!-- MacBook MOCKUP ------------------------------------------------------------------------------ -->
+
+					<!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
+
+					<div class="css-mb with-glare">
+					  <div class="mb-display-position">
+					    <div class="mb-display">
+					      <div class="mb-screen-position">
+					        <div class="mb-screen">
+        
+					          <!-- Image (aspect 16:10 recommended, but not required). You might also want to change or remove the background color, in case the picture is not big enough, or rendering is off  -->
+					          <img src="assets/screenshots/gearshow-en-min.png" alt="Gear Show" />
+					          
+
+					          <!-- Youtube - don't forget to remove glare -->
+					          <!-- <iframe width="960" height="480" src="http://www.youtube.com/embed/GUEZCxBcM78?rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;controls=2" frameborder="0"></iframe> -->
+					          <!-- Notice: Youtube has some toruble with embed players and gives consol errors -->
+
+					          <!-- Iframe, simple website - don't forget to remove glare -->
+					          <!-- iframe src="http://devmuerto.com" frameborder="0"></iframe> -->
+          
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="mb-body"></div>
+					  <div class="mb-bottom-cover"></div>
+					</div>
+
+<!-- MacBook MOCKUP END ------------------------------------------------------------------------- -->
+
+			<p>
+				A unique japanese show produced by Keito Kohara.
+			</p>
+			<p>
+				Gear. Mechanical Heart is a unique performance that combines pantomime theatre, original music, special effects and magic.
+			</p>
+			<p>
+				It is a new generation production which embraces and combines a whole range of performing genres in one show, from classical Kabuki to magic, from pantomime to advanced 3d-mapping, sound and special effects.
+			</p>
+			<p>
+				Gear. Mechanical Heart is a non-verbal performance that has already been on show for almost 5 years and remains the most popular entertainment production in the East of Japan.
+			</p>
+		</div>
+		<a href="#0" class="close cd-img-replace">Close</a>
+	</div> <!-- .cd-project-content -->
+
+	<div class="cd-project-content" id="kitchen-timer">
+		<div>
+			<h2>Kitchen Timer</h2>
+			<ul>
+				<li><span>Role:</span>Developer</li>
+				<li><span>Context:</span>Side project</li>
+				<li><span>Platform:</span>Responsive</li>
+				<li><span>Link:</span><a class="link" target="_blank" href="http://devmuerto.com/kitchen-timer/">devmuerto.com/kitchen-timer</a></li>
+			</ul>
+
+<!-- MacBook MOCKUP ------------------------------------------------------------------------------ -->
+
+					<!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
+
+					<div class="css-mb with-glare">
+					  <div class="mb-display-position">
+					    <div class="mb-display">
+					      <div class="mb-screen-position">
+					        <div class="mb-screen">
+        
+					          <!-- Image (aspect 16:10 recommended, but not required). You might also want to change or remove the background color, in case the picture is not big enough, or rendering is off  -->
+					          <img src="assets/screenshots/kitchen-timer-min.png" alt="Kitchen Timer" />
+					          
+
+					          <!-- Youtube - don't forget to remove glare -->
+					          <!-- <iframe width="960" height="480" src="http://www.youtube.com/embed/GUEZCxBcM78?rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;controls=2" frameborder="0"></iframe> -->
+					          <!-- Notice: Youtube has some toruble with embed players and gives consol errors -->
+
+					          <!-- Iframe, simple website - don't forget to remove glare -->
+					          <!-- iframe src="http://devmuerto.com" frameborder="0"></iframe> -->
+          
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="mb-body"></div>
+					  <div class="mb-bottom-cover"></div>
+					</div>
+
+<!-- MacBook MOCKUP END ------------------------------------------------------------------------- -->
+
+			<p>
+				Just kitchen timer with a nice look.
+			</p>
+			<p>
+				It may be upgraded & developed for iOS/Android with your support & <a class="link" target="_blank" href="http://devmuerto.com/donate/">donation</a>.
+			</p>
+			
+		</div>
+		<a href="#0" class="close cd-img-replace">Close</a>
+	</div> <!-- .cd-project-content -->
+
+	<div class="cd-project-content" id="dpd">
+		<div>
+			<h2>DPD</h2>
+			<ul>
+				<li><span>Role:</span>Manager</li>
+				<li><span>Context:</span>Outer studio</li>
+				<li><span>Platform:</span>Desktop</li>
+				<li><span>Link:</span><a class="link" target="_blank" href="http://dpd.ru">dpd.ru</a></li>
+			</ul>
+
+<!-- MacBook MOCKUP ------------------------------------------------------------------------------ -->
+
+					<!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
+
+					<div class="css-mb with-glare">
+					  <div class="mb-display-position">
+					    <div class="mb-display">
+					      <div class="mb-screen-position">
+					        <div class="mb-screen">
+        
+					          <!-- Image (aspect 16:10 recommended, but not required). You might also want to change or remove the background color, in case the picture is not big enough, or rendering is off  -->
+					          <img src="assets/screenshots/dpd-en-min.png" alt="DPD" />
+					          
+
+					          <!-- Youtube - don't forget to remove glare -->
+					          <!-- <iframe width="960" height="480" src="http://www.youtube.com/embed/GUEZCxBcM78?rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;controls=2" frameborder="0"></iframe> -->
+					          <!-- Notice: Youtube has some toruble with embed players and gives consol errors -->
+
+					          <!-- Iframe, simple website - don't forget to remove glare -->
+					          <!-- iframe src="http://devmuerto.com" frameborder="0"></iframe> -->
+          
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="mb-body"></div>
+					  <div class="mb-bottom-cover"></div>
+					</div>
+
+<!-- MacBook MOCKUP END ------------------------------------------------------------------------- -->
+
+			<p>
+				One of the biggest international agency of parcel delivery.
+			</p>
+			
+			</p>
+		</div>
+		<a href="#0" class="close cd-img-replace">Close</a>
+	</div> <!-- .cd-project-content -->
+
+	<div class="cd-project-content" id="stop-express">
+		<div>
+			<h2>Stop Express</h2>
+			<ul>
+				<li><span>Role:</span>Manager</li>
+				<li><span>Context:</span>Subcontract</li>
+				<li><span>Platform:</span>Responsive</li>
+				<li><span>Link:</span><a class="link" target="_blank" href="http://stopexpress.ru/?lang=en">stopexpress.ru</a></li>
+			</ul>
+
+<!-- MacBook MOCKUP ------------------------------------------------------------------------------ -->
+
+					<!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
+
+					<div class="css-mb with-glare">
+					  <div class="mb-display-position">
+					    <div class="mb-display">
+					      <div class="mb-screen-position">
+					        <div class="mb-screen">
+        
+					          <!-- Image (aspect 16:10 recommended, but not required). You might also want to change or remove the background color, in case the picture is not big enough, or rendering is off  -->
+					          <img src="assets/screenshots/stop-express-en-min.png" alt="Stop Express" />
+					          
+
+					          <!-- Youtube - don't forget to remove glare -->
+					          <!-- <iframe width="960" height="480" src="http://www.youtube.com/embed/GUEZCxBcM78?rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;controls=2" frameborder="0"></iframe> -->
+					          <!-- Notice: Youtube has some toruble with embed players and gives consol errors -->
+
+					          <!-- Iframe, simple website - don't forget to remove glare -->
+					          <!-- iframe src="http://devmuerto.com" frameborder="0"></iframe> -->
+          
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="mb-body"></div>
+					  <div class="mb-bottom-cover"></div>
+					</div>
+
+<!-- MacBook MOCKUP END ------------------------------------------------------------------------- -->
+
+			<p>
+				Fast Food network in Saint-Petersburg.
+			</p>
+			
+		</div>
+		<a href="#0" class="close cd-img-replace">Close</a>
+	</div> <!-- .cd-project-content -->
+
+	<div class="cd-project-content" id="volga-dream">
+		<div>
+			<h2>Volga Dream</h2>
+			<ul>
+				<li><span>Role:</span>Manager</li>
+				<li><span>Context:</span>Outer studio</li>
+				<li><span>Platform:</span>Desktop</li>
+				<li><span>Link:</span><a class="link" target="_blank" href="http://www.volgadream.com/">volgadream.com</a></li>
+			</ul>
+
+<!-- MacBook MOCKUP ------------------------------------------------------------------------------ -->
+
+					<!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
+
+					<div class="css-mb with-glare">
+					  <div class="mb-display-position">
+					    <div class="mb-display">
+					      <div class="mb-screen-position">
+					        <div class="mb-screen">
+        
+					          <!-- Image (aspect 16:10 recommended, but not required). You might also want to change or remove the background color, in case the picture is not big enough, or rendering is off  -->
+					          <img src="assets/screenshots/volga-dream-min.png" alt="Volga Dream" />
+					          
+
+					          <!-- Youtube - don't forget to remove glare -->
+					          <!-- <iframe width="960" height="480" src="http://www.youtube.com/embed/GUEZCxBcM78?rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;controls=2" frameborder="0"></iframe> -->
+					          <!-- Notice: Youtube has some toruble with embed players and gives consol errors -->
+
+					          <!-- Iframe, simple website - don't forget to remove glare -->
+					          <!-- iframe src="http://devmuerto.com" frameborder="0"></iframe> -->
+          
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="mb-body"></div>
+					  <div class="mb-bottom-cover"></div>
+					</div>
+
+<!-- MacBook MOCKUP END ------------------------------------------------------------------------- -->
+
+			<p>
+				Luxury river cruises in Russia.
+			</p>
+			<p>
+				There is no river cruise in Russia like the Volga river cruise. No cruise that places you so completely in another place and time. Europe's longest and largest river stretches fr om Ivan the Terrible to Peter the Great to Catherine the Great, and on into today, wh ere live along Russia's central artery looks very much like it always has — the churches, the villages, the people, comprising scenes from an old painting you may swear you have seen in a gallery.This Russian river tour will promise you an unforgettable afterglow you've never experienced with any other Moscow river cruise before.
+			</p>
+			
+		</div>
+		<a href="#0" class="close cd-img-replace">Close</a>
+	</div> <!-- .cd-project-content -->
+
+	<div class="cd-project-content" id="printanika">
+		<div>
+			<h2>Printanika</h2>
+			<ul>
+				<li><span>Role:</span>Manager</li>
+				<li><span>Context:</span>Freelance</li>
+				<li><span>Platform:</span>Responsive</li>
+				<li><span>Link:</span><a class="link" target="_blank" href="http://printanika.ru/">printanika.ru</a></li>
+			</ul>
+
+<!-- MacBook MOCKUP ------------------------------------------------------------------------------ -->
+
+					<!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
+
+					<div class="css-mb with-glare">
+					  <div class="mb-display-position">
+					    <div class="mb-display">
+					      <div class="mb-screen-position">
+					        <div class="mb-screen">
+        
+					          <!-- Image (aspect 16:10 recommended, but not required). You might also want to change or remove the background color, in case the picture is not big enough, or rendering is off  -->
+					          <img src="assets/screenshots/printanika-min.png" alt="Printanika" />
+					          
+
+					          <!-- Youtube - don't forget to remove glare -->
+					          <!-- <iframe width="960" height="480" src="http://www.youtube.com/embed/GUEZCxBcM78?rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;controls=2" frameborder="0"></iframe> -->
+					          <!-- Notice: Youtube has some toruble with embed players and gives consol errors -->
+
+					          <!-- Iframe, simple website - don't forget to remove glare -->
+					          <!-- iframe src="http://devmuerto.com" frameborder="0"></iframe> -->
+          
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="mb-body"></div>
+					  <div class="mb-bottom-cover"></div>
+					</div>
+
+<!-- MacBook MOCKUP END ------------------------------------------------------------------------- -->
+
+			<p>
+				T-shirts prints service (ex. Mayki24).
+			</p>
+			
+		</div>
+		<a href="#0" class="close cd-img-replace">Close</a>
+	</div> <!-- .cd-project-content -->
+
+	<div class="cd-project-content" id="finex">
+		<div>
+			<h2>Finex</h2>
+			<ul>
+				<li><span>Role:</span>Manager</li>
+				<li><span>Context:</span>Outer studio</li>
+				<li><span>Platform:</span>Responsive</li>
+				<li><span>Link:</span><a class="link" target="_blank" href="http://parket.moscowdesignfloors.ru/">parket.moscowdesignfloors.ru</a></li>
+			</ul>
+
+<!-- MacBook MOCKUP ------------------------------------------------------------------------------ -->
+
+					<!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
+
+					<div class="css-mb with-glare">
+					  <div class="mb-display-position">
+					    <div class="mb-display">
+					      <div class="mb-screen-position">
+					        <div class="mb-screen">
+        
+					          <!-- Image (aspect 16:10 recommended, but not required). You might also want to change or remove the background color, in case the picture is not big enough, or rendering is off  -->
+					          <img src="assets/screenshots/finex-min.png" alt="Finex" />
+					          
+
+					          <!-- Youtube - don't forget to remove glare -->
+					          <!-- <iframe width="960" height="480" src="http://www.youtube.com/embed/GUEZCxBcM78?rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;controls=2" frameborder="0"></iframe> -->
+					          <!-- Notice: Youtube has some toruble with embed players and gives consol errors -->
+
+					          <!-- Iframe, simple website - don't forget to remove glare -->
+					          <!-- iframe src="http://devmuerto.com" frameborder="0"></iframe> -->
+          
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="mb-body"></div>
+					  <div class="mb-bottom-cover"></div>
+					</div>
+
+<!-- MacBook MOCKUP END ------------------------------------------------------------------------- -->
+
+			<p>
+				Landing Page with high conversion for manufacturer of wooden floors and coatings.
+			</p>
+			
+		</div>
+		<a href="#0" class="close cd-img-replace">Close</a>
+	</div> <!-- .cd-project-content -->
+
+	<div class="cd-project-content" id="iitrust">
+		<div>
+			<h2>Infotex Trust</h2>
+			<ul>
+				<li><span>Role:</span>Manager</li>
+				<li><span>Context:</span>Outer studio</li>
+				<li><span>Platform:</span>Responsive</li>
+				<li><span>Link:</span><a class="link" target="_blank" href="https://uc.iitrust.ru/">uc.iitrust.ru</a></li>
+			</ul>
+
+<!-- MacBook MOCKUP ------------------------------------------------------------------------------ -->
+
+					<!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
+
+					<div class="css-mb with-glare">
+					  <div class="mb-display-position">
+					    <div class="mb-display">
+					      <div class="mb-screen-position">
+					        <div class="mb-screen">
+        
+					          <!-- Image (aspect 16:10 recommended, but not required). You might also want to change or remove the background color, in case the picture is not big enough, or rendering is off  -->
+					          <img src="assets/screenshots/iitrust-min.png" alt="Iitrust" />
+					          
+
+					          <!-- Youtube - don't forget to remove glare -->
+					          <!-- <iframe width="960" height="480" src="http://www.youtube.com/embed/GUEZCxBcM78?rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;controls=2" frameborder="0"></iframe> -->
+					          <!-- Notice: Youtube has some toruble with embed players and gives consol errors -->
+
+					          <!-- Iframe, simple website - don't forget to remove glare -->
+					          <!-- iframe src="http://devmuerto.com" frameborder="0"></iframe> -->
+          
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="mb-body"></div>
+					  <div class="mb-bottom-cover"></div>
+					</div>
+
+<!-- MacBook MOCKUP END ------------------------------------------------------------------------- -->
+
+			<p>
+				E-Sign Certifying Service.
+			</p>
+			
+		</div>
+		<a href="#0" class="close cd-img-replace">Close</a>
+	</div> <!-- .cd-project-content -->
+
+	<div class="cd-project-content" id="ib-translations">
+		<div>
+			<h2>IB Translations</h2>
+			<ul>
+				<li><span>Role:</span>Manager</li>
+				<li><span>Context:</span>Outer studio</li>
+				<li><span>Platform:</span>Desktop</li>
+				<li><span>Link:</span><a class="link" target="_blank" href="http://ib-translations.ru/">ib-translations.ru</a></li>
+			</ul>
+
+<!-- MacBook MOCKUP ------------------------------------------------------------------------------ -->
+
+					<!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
+
+					<div class="css-mb with-glare">
+					  <div class="mb-display-position">
+					    <div class="mb-display">
+					      <div class="mb-screen-position">
+					        <div class="mb-screen">
+        
+					          <!-- Image (aspect 16:10 recommended, but not required). You might also want to change or remove the background color, in case the picture is not big enough, or rendering is off  -->
+					          <img src="assets/screenshots/ib-min.png" alt="IB Translations" />
+					          
+
+					          <!-- Youtube - don't forget to remove glare -->
+					          <!-- <iframe width="960" height="480" src="http://www.youtube.com/embed/GUEZCxBcM78?rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;controls=2" frameborder="0"></iframe> -->
+					          <!-- Notice: Youtube has some toruble with embed players and gives consol errors -->
+
+					          <!-- Iframe, simple website - don't forget to remove glare -->
+					          <!-- iframe src="http://devmuerto.com" frameborder="0"></iframe> -->
+          
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="mb-body"></div>
+					  <div class="mb-bottom-cover"></div>
+					</div>
+
+<!-- MacBook MOCKUP END ------------------------------------------------------------------------- -->
+
+			<p>
+				Promotional website for IB Translations, who provides interpretation services and written translations in the financial sector for investment banks and the wider business community, and has participated in most flagship deals in the Russian capital market.
+			</p>
+			
+		</div>
+		<a href="#0" class="close cd-img-replace">Close</a>
+	</div> <!-- .cd-project-content -->
+
+	<div class="cd-project-content" id="yandex-terra">
+		<div>
+			<h2>Yandex Terra</h2>
+			<ul>
+				<li><span>Role:</span>Manager</li>
+				<li><span>Context:</span>Outer studio</li>
+				<li><span>Platform:</span>Desktop</li>
+				<li><span>Link:</span><a class="link" target="_blank" href="http://yandex-terra.com/">yandex-terra.com</a></li>
+			</ul>
+
+<!-- MacBook MOCKUP ------------------------------------------------------------------------------ -->
+
+					<!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
+
+					<div class="css-mb with-glare">
+					  <div class="mb-display-position">
+					    <div class="mb-display">
+					      <div class="mb-screen-position">
+					        <div class="mb-screen">
+        
+					          <!-- Image (aspect 16:10 recommended, but not required). You might also want to change or remove the background color, in case the picture is not big enough, or rendering is off  -->
+					          <img src="assets/screenshots/ya-terra-min.png" alt="Yandex Terra" />
+					          
+
+					          <!-- Youtube - don't forget to remove glare -->
+					          <!-- <iframe width="960" height="480" src="http://www.youtube.com/embed/GUEZCxBcM78?rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;controls=2" frameborder="0"></iframe> -->
+					          <!-- Notice: Youtube has some toruble with embed players and gives consol errors -->
+
+					          <!-- Iframe, simple website - don't forget to remove glare -->
+					          <!-- iframe src="http://devmuerto.com" frameborder="0"></iframe> -->
+          
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="mb-body"></div>
+					  <div class="mb-bottom-cover"></div>
+					</div>
+
+<!-- MacBook MOCKUP END ------------------------------------------------------------------------- -->
+
+			<p>
+				Yandex company, the largest Russian search engine and Internet portal (Russian Google), acquired share in Seismotech, Ltd. that provides services in the area of interpretative processing of seismic data and software development (Prime package), and provided its equipment and distributed computing technologies for processing of geological-geophysical data.
+			</p>
+			<p>
+				The Yandex.Terra project provides the unique complex of services for seismic data processing: from the execution of separate computing-intensive procedures (migrations, SRME and others) using efficient and scalable hardware and software complex up to the Prime software licensing and its technical support.
+			</p>
+			
+		</div>
+		<a href="#0" class="close cd-img-replace">Close</a>
+	</div> <!-- .cd-project-content -->
+
+	<div class="cd-project-content" id="beauty-musical">
+		<div>
+			<h2>Beauty and the Beast Musical</h2>
+			<ul>
+				<li><span>Role:</span>Manager</li>
+				<li><span>Context:</span>Outer studio</li>
+				<li><span>Platform:</span>Responsive</li>
+				<li><span>Link:</span><a class="link" target="_blank" href="http://beauty-musical.ru/">beauty-musical.ru</a></li>
+			</ul>
+
+<!-- MacBook MOCKUP ------------------------------------------------------------------------------ -->
+
+					<!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
+
+					<div class="css-mb with-glare">
+					  <div class="mb-display-position">
+					    <div class="mb-display">
+					      <div class="mb-screen-position">
+					        <div class="mb-screen">
+        
+					          <!-- Image (aspect 16:10 recommended, but not required). You might also want to change or remove the background color, in case the picture is not big enough, or rendering is off  -->
+					          <img src="assets/screenshots/beauty-min.png" alt="Beauty and the Beast Musical" />
+					          
+
+					          <!-- Youtube - don't forget to remove glare -->
+					          <!-- <iframe width="960" height="480" src="http://www.youtube.com/embed/GUEZCxBcM78?rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;controls=2" frameborder="0"></iframe> -->
+					          <!-- Notice: Youtube has some toruble with embed players and gives consol errors -->
+
+					          <!-- Iframe, simple website - don't forget to remove glare -->
+					          <!-- iframe src="http://devmuerto.com" frameborder="0"></iframe> -->
+          
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="mb-body"></div>
+					  <div class="mb-bottom-cover"></div>
+					</div>
+
+<!-- MacBook MOCKUP END ------------------------------------------------------------------------- -->
+
+			<p>
+				Promotional website for "Beauty and the Beast" Musical.
+			</p>
+			
+		</div>
+		<a href="#0" class="close cd-img-replace">Close</a>
+	</div> <!-- .cd-project-content -->
+
+	<div class="cd-project-content" id="antique-market">
+		<div>
+			<h2>Antique Market</h2>
+			<ul>
+				<li><span>Role:</span>Manager</li>
+				<li><span>Context:</span>Outer studio</li>
+				<li><span>Platform:</span>Responsive</li>
+				<li><span>Link:</span><a class="link" target="_blank" href="http://antik-market.ru/">antik-market.ru</a></li>
+			</ul>
+
+<!-- MacBook MOCKUP ------------------------------------------------------------------------------ -->
+
+					<!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
+
+					<div class="css-mb with-glare">
+					  <div class="mb-display-position">
+					    <div class="mb-display">
+					      <div class="mb-screen-position">
+					        <div class="mb-screen">
+        
+					          <!-- Image (aspect 16:10 recommended, but not required). You might also want to change or remove the background color, in case the picture is not big enough, or rendering is off  -->
+					          <img src="assets/screenshots/antique-market-min.png" alt="Antique Market" />
+					          
+
+					          <!-- Youtube - don't forget to remove glare -->
+					          <!-- <iframe width="960" height="480" src="http://www.youtube.com/embed/GUEZCxBcM78?rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;controls=2" frameborder="0"></iframe> -->
+					          <!-- Notice: Youtube has some toruble with embed players and gives consol errors -->
+
+					          <!-- Iframe, simple website - don't forget to remove glare -->
+					          <!-- iframe src="http://devmuerto.com" frameborder="0"></iframe> -->
+          
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="mb-body"></div>
+					  <div class="mb-bottom-cover"></div>
+					</div>
+
+<!-- MacBook MOCKUP END ------------------------------------------------------------------------- -->
+
+			<p>
+				Antique Online store.
+			</p>
+			
+		</div>
+		<a href="#0" class="close cd-img-replace">Close</a>
+	</div> <!-- .cd-project-content -->
+
+	<div class="cd-project-content" id="track-me">
+		<div>
+			<h2>Track Me</h2>
+			<ul>
+				<li><span>Role:</span>Developer</li>
+				<li><span>Context:</span>Side project</li>
+				<li><span>Platform:</span>Responsive</li>
+				<li><span>Link:</span><a class="link" target="_blank" href="http://devmuerto.com/track-me/">devmuerto.com/track-me</a></li>
+			</ul>
+
+<!-- MacBook MOCKUP ------------------------------------------------------------------------------ -->
+
+					<!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
+
+					<div class="css-mb with-glare">
+					  <div class="mb-display-position">
+					    <div class="mb-display">
+					      <div class="mb-screen-position">
+					        <div class="mb-screen">
+        
+					          <!-- Image (aspect 16:10 recommended, but not required). You might also want to change or remove the background color, in case the picture is not big enough, or rendering is off  -->
+					          <img src="assets/screenshots/track-me-min.png" alt="Track Me" />
+					          
+
+					          <!-- Youtube - don't forget to remove glare -->
+					          <!-- <iframe width="960" height="480" src="http://www.youtube.com/embed/GUEZCxBcM78?rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;controls=2" frameborder="0"></iframe> -->
+					          <!-- Notice: Youtube has some toruble with embed players and gives consol errors -->
+
+					          <!-- Iframe, simple website - don't forget to remove glare -->
+					          <!-- iframe src="http://devmuerto.com" frameborder="0"></iframe> -->
+          
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="mb-body"></div>
+					  <div class="mb-bottom-cover"></div>
+					</div>
+
+<!-- MacBook MOCKUP END ------------------------------------------------------------------------- -->
+
+			<p>
+				Browser tracking service. 
+			</p>
+			<p>
+				Project needs a <a class="link" target="_blank" href="http://devmuerto.com/donate/">donations</a> for complete realization.
+			</p>
+			
+		</div>
+		<a href="#0" class="close cd-img-replace">Close</a>
+	</div> <!-- .cd-project-content -->
+
+	<div class="cd-project-content" id="barcode-generator">
+		<div>
+			<h2>Barcode Generator</h2>
+			<ul>
+				<li><span>Role:</span>Developer</li>
+				<li><span>Context:</span>Side project</li>
+				<li><span>Platform:</span>Responsive</li>
+				<li><span>Link:</span><a class="link" target="_blank" href="http://devmuerto.com/barcode-gen/">devmuerto.com/barcode-gen</a></li>
+			</ul>
+
+<!-- MacBook MOCKUP ------------------------------------------------------------------------------ -->
+
+					<!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
+
+					<div class="css-mb with-glare">
+					  <div class="mb-display-position">
+					    <div class="mb-display">
+					      <div class="mb-screen-position">
+					        <div class="mb-screen">
+        
+					          <!-- Image (aspect 16:10 recommended, but not required). You might also want to change or remove the background color, in case the picture is not big enough, or rendering is off  -->
+					          <img src="assets/screenshots/barcode-gen-min.png" alt="Barcode Generator" />
+					          
+
+					          <!-- Youtube - don't forget to remove glare -->
+					          <!-- <iframe width="960" height="480" src="http://www.youtube.com/embed/GUEZCxBcM78?rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;controls=2" frameborder="0"></iframe> -->
+					          <!-- Notice: Youtube has some toruble with embed players and gives consol errors -->
+
+					          <!-- Iframe, simple website - don't forget to remove glare -->
+					          <!-- iframe src="http://devmuerto.com" frameborder="0"></iframe> -->
+          
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="mb-body"></div>
+					  <div class="mb-bottom-cover"></div>
+					</div>
+
+<!-- MacBook MOCKUP END ------------------------------------------------------------------------- -->
+
+			<p>
+				Simple and fast barcode generator (Code 39). 
+			</p>
+			<p>
+				Powered by AngularJS.
+			</p>
+			<p>Wanna help? Make a <a class="link" target="_blank" href="http://devmuerto.com/donate/">donation!</a>
+			</p>
+		</div>
+		<a href="#0" class="close cd-img-replace">Close</a>
+	</div> <!-- .cd-project-content -->
+
+
+<script src="/js/jquery.nicescroll.min.js"></script>
+<script src="/js/only-nav.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
