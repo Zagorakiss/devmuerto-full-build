@@ -103,7 +103,7 @@ canvas {
 
 /*Pig*/
 .donate-pig {display: block; width: 66px; height: 66px; position: fixed; bottom: 10px; right: 10px;}
-.donate-pig .icon {transition: all 0.4s ease;}
+.donate-pig .icon {-webkit-transition: all 0.4s ease;transition: all 0.4s ease;}
 .donate-pig:hover .icon{color: #FF7A7B;}
 
 /*Logo*/

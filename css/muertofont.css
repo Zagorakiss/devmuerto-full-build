@@ -59,6 +59,7 @@ footer .social .icon {
 .payways .icon {
 	font-size: 33px;
 	color: #ffa500;
+	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
 
