@@ -72,22 +72,18 @@
     </div>
     <ul class="menu__list">
       <!-- INTERNAL -->
-      <li class="menu__item"><a href="#header" class="menu__link"><span class="icon icon-flag"></span> Start</a></li>
+      <!-- <li class="menu__item"><a href="#header" class="menu__link"><span class="icon icon-flag"></span> Start</a></li> -->
       <li class="menu__item"><a href="#about-me" class="menu__link"><span class="icon icon-profile-male"></span> About me</a></li>
       <li class="menu__item"><a href="#my-work" class="menu__link"><span class="icon icon-circle-compass"></span> What I do</a></li>
       <!-- <li class="menu__item"><a href="#terminal-section" class="menu__link"><span class="icon icon-terminal2"></span> Terminal</a></li> -->
       <li class="menu__item"><a href="#portfolio" class="menu__link"><span class="icon icon-clock"></span> Recent work</a></li>
       <li class="menu__item"><a href="#lab" class="menu__link"><span class="icon icon-lab"></span> Laboratory</a></li>
       <li class="menu__item"><a href="#contacts" class="menu__link"><span class="icon icon-envelope"></span> Contacts</a></li>
-      <!-- EXTERNAL -->
+      
       <li class="menu__item">
-        <a href="/portfolio/" target="_blank" class="menu__link menu__link--external menu__link--external--first">
-          [ <span class="icon icon-briefcase"></span> Portfolio Page <span class="icon icon-new-tab"></span> ]</a>
-      </li>
+        <a href="/portfolio/" class="menu__link"><span class="icon icon-briefcase"></span> Portfolio Page</a></li>
       <li class="menu__item">
-        <a href="/donate/" target="_blank" class="menu__link menu__link--external">
-          [ <span class="icon icon-pig"></span> Donate Page <span class="icon icon-new-tab"></span> ]</a>
-      </li>
+        <a href="/donate/" class="menu__link"><span class="icon icon-pig"></span> Donate Page</a></li>
     </ul>
   </nav>
       <!-- NAV END -->
@@ -115,7 +111,7 @@
   <section class="about-me" id="about-me">
       <div class="avatar"></div>
       <h1>About me</h1>
-      <p>Hello! My real name is Sergey Rastorguev & I'm <nobr>Front-End developer</nobr>.<br>
+      <p>Hello! My real name is Sergey Rastorguev & I'm a <nobr>Front-End developer</nobr>.<br>
         I like drumming, sleeping, travels, whales & my job.
       </p>
       <!-- BUTTON -->
@@ -145,7 +141,7 @@
   <div class="my-work__card col-sm-5 col-xs-12"><h2><span class="icon icon-html5 gradient-anim"></span></h2><p>I code pages using HTML5, CSS3, {Less}, Javascript, jQuery, Bootstrap, npm & Gulp.</p><p class="comment">// To see full skills list type the command "list" in the <a class="link" href="#terminal-section">terminal</a> below.</p><p>Always responsive.<br>Always focused on UX/UI & beautiful animation.</p>
 </div>
 
-  <div class="my-work__card col-sm-5 col-sm-offset-1 col-xs-12"><h2><span class="icon icon-spaceinvaders fly-anim"></span></span></h2><p>I have nice skills not only in development, but also in project managment.</p><p class="comment">// Let's <a class="link" href="#terminal-section">check it</a>.</p><p>For some projects I collaborate with my friends web-designers & back-end developers.</p></div>
+  <div class="my-work__card col-sm-5 col-sm-offset-1 col-xs-12"><h2><span class="icon icon-spaceinvaders fly-anim"></span></span></h2><p>I have nice skills not only in development, but also in project management.</p><p class="comment">// Let's <a class="link" href="#terminal-section">check it</a>.</p><p>For some projects I collaborate with my friends — web-designers & back-end developers.</p></div>
 
  </div>
 
@@ -188,7 +184,7 @@
     <div class="row"><span class="icon icon-clock"></span></div>
     <h1>Recent work</h1>
 
-<p>My recent project, more projects at the <a href="/portfolio/" class="link">Portfolio page</a></p>
+<p>My recent project, more projects are on the <a href="/portfolio/" class="link">Portfolio page</a></p>
 
 <div class="row">
   <a href="http://www.chpfly.com/" class="recent-work" target="_blank"></a>
@@ -308,7 +304,38 @@
     <script src="/js/classie.min.js"></script>
     <script src="/js/stepsForm.min.js"></script>
     <script>
-        var theForm=document.getElementById("theForm");new stepsForm(theForm,{onSubmit:function(e){classie.addClass(theForm.querySelector(".simform-inner"),"hide");var o=theForm.querySelector(".final-message");o.innerHTML="Thank you! I'll be in touch.",classie.addClass(o,"show")}});
+
+        var theForm=document.getElementById("theForm");
+        new stepsForm(theForm,{
+          onSubmit:function(e){
+
+          var q1 = document.getElementById('q1').value;
+          var q2 = document.getElementById('q2').value;
+          var q3 = document.getElementById('q3').value;
+          var q4 = document.getElementById('q4').value;
+
+
+    if( q1 !== "" && q1 !== undefined && q2 !== "" && q2 !== undefined && q3 !== "" && q3 !== undefined && q4 !=="" && q4 !== undefined ) {
+              $.ajax({
+                  type: "POST",
+                  url: '/sendmail.php',
+                  data: {
+                    q1 : q1,
+                    q2 : q2,
+                    q3 : q3,
+                    q4 : q4
+                  },
+                success: function(data) {
+                console.log('Form was sended - success');
+                }
+              });
+    }  
+
+    console.log(q1, q2, q3, q4);
+
+
+            classie.addClass(theForm.querySelector(".simform-inner"),"hide");var o=theForm.querySelector(".final-message");o.innerHTML="Thank you! I'll be in touch.",classie.addClass(o,"show")}});
+
     </script>
   </body>
 </html>
