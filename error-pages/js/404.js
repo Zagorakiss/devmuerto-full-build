@@ -28,7 +28,7 @@ function resetForm(withKittens){
 
   if (withKittens){
     $('.kittens').removeClass('kittens');
-    message = "Huzzzzzah Kittehs! Try again!"
+    message = "Huzzzzzah Kittens! Try again!"
   }
 
   $('.new-output').removeClass('new-output');
