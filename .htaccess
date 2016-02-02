@@ -1,24 +1,24 @@
-//Caching schema
+# Caching scheme
 <FilesMatch "\.(jpg|png|css|less|js|eot|ttf|woff|svg)$">
 Header set Cache-Control "private, max-age=72576000"
 </FilesMatch>
 
-//Custom 400 errors
+# Custom 400 errors
 ErrorDocument 400 /error-pages/400.html
 
-//Custom 401 errors
+# Custom 401 errors
 ErrorDocument 401 /error-pages/401.html
 
-//Custom 403 errors
+# Custom 403 errors
 ErrorDocument 403 /error-pages/403.html
 
-//Custom 404 errors
+# Custom 404 errors
 ErrorDocument 404 /error-pages/404.html
 
-//Custom 500 errors
+# Custom 500 errors
 ErrorDocument 500 /error-pages/500.html
 
-//Block bad bots
+# Block bad bots
 RewriteEngine On 
 RewriteCond %{HTTP_USER_AGENT} ^BlackWidow [OR]
 RewriteCond %{HTTP_USER_AGENT} ^Bot\ mailto:craftbot@yahoo.com [OR]
@@ -98,12 +98,12 @@ RewriteCond %{HTTP_USER_AGENT} ^Xaldon\ WebSpider [OR]
 RewriteCond %{HTTP_USER_AGENT} ^Zeus
 RewriteRule ^.* - [F,L]
 
-//Prevent viewing of .htaccess file
+# Prevent viewing of .htaccess file
 <Files .htaccess>
 order allow,deny
 deny from all
 </Files>
 
-//Prevent directory listings
+# Prevent directory listings
 Options All -Indexes
  

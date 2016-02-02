@@ -534,6 +534,14 @@ section.my-work {}
     100%{background-position:0% 50%}
 }
 
+@-moz-document url-prefix()
+{
+  .gradient-anim { 
+    background: transparent;
+   }
+}
+
+
 .fly-anim {
   -webkit-animation: fly ease 8s;
           animation: fly ease 8s;
