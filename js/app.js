@@ -395,7 +395,7 @@ $(document).ready(function() {
         }
   
         function list() {
-                terminal.append("MY SKILLS: html5, css3, less, javascript (native, jQuery, APIs), svg \n- Frameworks: bootstrap, ink, lumx, mdl, materialize, material-ui \n- Others: npm, bower, gulp, postcss, font awesome, icomoon, git \n- Design: photoshop, illustrator \n");
+                terminal.append("MY SKILLS: html5, css3, less, javascript (native, jQuery, APIs), svg \n- Frameworks: bootstrap, ink, lumx, mdl, materialize, material-ui \n- Others: npm, bower, gulp, postcss, font awesome, icomoon, git, phonegap \n- Design: photoshop, illustrator \n");
         }
     
         function echo(args) {
